@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="stylesheet" href="style.css">
+    <title>login page</title>
+    <style>
+      *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+}
+
+h1,h2,h3,h4.h5,h6{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+a, a:hover{
+    text-decoration: none;
+}
+.login-page{
+    width: 100%;
+    height: 100vh;    
+    background-color: rgb(237, 222, 238);     
+    display: flex;
+    justify-content: center;
+    
+
+}
+.main-form{
+    width: 400px;
+    text-align: center;  
+    border-radius: 5px;
+    height: 350px;
+    top:20%;
+    margin: 0px30px;
+    padding: 10px 30px;
+    position: absolute;
+    padding: auto;
+    background-color: #fff;
+    border: 2px solid rgb(54, 246, 20);
+    box-shadow:  rgba(8, 44, 14, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+ 
+    
+}
+.main-form:hover{
+
+    border: 2px solid rgb(54, 246, 20);
+    box-shadow: rgba(73, 216, 21, 0.873) 0px 30px 60px -12px inset, rgba(54, 255, 84, 0.745) 0px 18px 36px -18px inset; 
+}
+.logo{
+    margin-top: 20px;
+    text-transform: uppercase;
+    line-height: 60px; 
+    color:  rgb(43, 200, 29);
+
+  
+}
+
+   
+
+
+ input{
+    margin: 5px 0px;
+    padding: 10px 30px;
+    border:none ;
+    box-shadow:  rgba(8, 44, 14, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    text-transform: uppercase;
+    font-weight: bold;   
+    border-radius: 5px;
+    outline: none;
+   
+   
+}
+input:hover,input:focus{
+    outline: 2px solid rgb(58, 206, 36);
+   
+    
+}
+
+button{
+    width: 200px;
+    margin: 10px 5px 0px;
+    padding: 5px 0;  
+    box-shadow:  rgba(8, 44, 14, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 3px;
+    border-radius: 30px;
+    /* background: transparent; */
+    color:  rgba(2,0,36,1);
+    font-size: 18px;
+    line-height: 28PX;
+     position: relative;   
+    cursor: pointer;
+    z-index: 1;
+    border: none;
+    /* background: #fff; */
+
+    
+}
+span{
+     width:0% ; 
+    height: 100% ;
+    bottom: 0; 
+    left:0 ;
+    position:absolute ;
+     border-radius:30PX ; 
+    background: linear-gradient(20deg, rgb(46, 242, 29), rgb(57, 228, 228) 65%, white 50%);
+    
+   transition: 1S;
+   z-index: -1;
+ 
+
+}
+ button:hover span{
+    width: 100%;
+}
+
+.new{
+    float: left;
+    text-transform:capitalize ;
+}
+.forgot{
+    text-transform:capitalize ;
+    float: right;
+}
+    </style>
+</head>
+<body>
+    <section class="login-page">
+        <div class="main-form">
+            <h1 class="logo">Green school</h1>
+            <div class="form-group">
+                <input type="text" id="user or email" name="user or email"
+                placeholder="User Name or Email">
+
+            </div>
+            <br>
+            <div class="form-group">
+                <input type="password" id="password" name="password"
+                placeholder="Entry Your Password">
+
+            </div>
+            <br>
+            <div>                 
+                <button><span></span> Login</button>
+              </div>
+               <br>
+                <a href="#" class="new"> *create a new account</a>
+                <a href="#" class="forgot"> *forgotten passwpord</a>
+           
+            </div>
+       
+
+            
+        </div>
+    </section>
+    
+</body>
+</html>

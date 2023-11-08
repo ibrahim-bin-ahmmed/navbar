@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        div{
+            height: 400px;
+            width: 400px;
+            border: 2px solid gray;
+            border-radius: 10px;
+            text-align: center;
+            line-height: 350px;
+          
+            position: relative;
+           /* z-index: 1;  */
+        }
+     
+        span {
+            position: absolute;
+            width: 0%;
+            height: 100%;
+            background: linear-gradient(133deg, Green 50%);
+            left: 0%;
+            top: 0px;
+            bottom: 0px;
+            transition: 10s;
+            z-index: -1;
+            border-radius: 10px;
+        }
+        div:hover span {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div><span></span>
+       <h1> I love my country</h1>
+    </div>
+</body>
+</html>
